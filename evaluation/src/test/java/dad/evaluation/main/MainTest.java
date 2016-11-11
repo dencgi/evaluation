@@ -32,7 +32,7 @@ import dad.evaluation.joueur.Main;
  */
 public class MainTest {
 
-	String toto;
+	String titi;
 	
 	@Test
 	public void testCarre() throws MainPleineException {
