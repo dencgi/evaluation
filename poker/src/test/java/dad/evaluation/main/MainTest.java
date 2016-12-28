@@ -2,7 +2,6 @@ package dad.evaluation.main;
 
 import static org.junit.Assert.assertEquals;
 
-import org.apache.tools.ant.Main;
 import org.junit.Test;
 
 /*
