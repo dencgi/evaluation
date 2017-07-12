@@ -12,6 +12,25 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
+/*
+ * Créer deux web services qui retournent le résultat de la suite de Fibonacci pour la valeur passée en paramètre.
+ * Un des services doit implémenter la suite de Fibonacci d'une façon linéaire ; l'autre doit implémenter la suite d'une façon récursive.
+ *
+ * Pour rappel, voici la suite de Fibonacci :
+ * f(0) = 0
+ * f(1) = 1
+ * f(n) = f(n-1) + f(n-2)
+ * 
+ * Cela signifie que :
+ *   f(2) = 1 + 0 = 1
+ *   f(3) = 1 + 1 = 2
+ *   f(4) = 2 + 1 = 3
+ *   ...
+ *   f(10) = 34 + 21 = 55
+ *
+ * Temps nécessaire : 45 minutes.
+ */
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
