@@ -4,6 +4,10 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import dad.evaluation.Fibonacci;
+import dad.evaluation.LinearFibonacci;
+import dad.evaluation.RecursiveFibonacci;
+
 /*
  * Faire passer les tests JUnit ci-dessous.
  * 
