@@ -4,6 +4,13 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import dad.evaluation.Carte;
+import dad.evaluation.Combinaison;
+import dad.evaluation.Couleur;
+import dad.evaluation.Main;
+import dad.evaluation.MainPleineException;
+import dad.evaluation.Valeur;
+
 /*
  * Faire passer les tests JUnit ci-dessous.
  * 
@@ -26,7 +33,7 @@ import org.junit.Test;
 public class MainTest {
 
 	@Test
-	public void testQuinteFlush() {
+	public void testQuinteFlush() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.NEUF));
 		main.add(new Carte(Couleur.TREFLE, Valeur.DIX));
@@ -37,7 +44,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testCarre() {
+	public void testCarre() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.COEUR, Valeur.DEUX));
 		main.add(new Carte(Couleur.TREFLE, Valeur.AS));
@@ -48,7 +55,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testFull() {
+	public void testFull() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.PIQUE, Valeur.DEUX));
 		main.add(new Carte(Couleur.CARREAU, Valeur.AS));
@@ -59,7 +66,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testCouleur() {
+	public void testCouleur() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.DEUX));
 		main.add(new Carte(Couleur.TREFLE, Valeur.AS));
@@ -70,7 +77,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testSuite() {
+	public void testSuite() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.COEUR, Valeur.DAME));
 		main.add(new Carte(Couleur.TREFLE, Valeur.DIX));
@@ -81,7 +88,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testBrelan() {
+	public void testBrelan() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.VALET));
 		main.add(new Carte(Couleur.PIQUE, Valeur.VALET));
@@ -92,7 +99,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testDoublePaire() {
+	public void testDoublePaire() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.DEUX));
 		main.add(new Carte(Couleur.COEUR, Valeur.DEUX));
@@ -103,7 +110,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testPaire() {
+	public void testPaire() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.DEUX));
 		main.add(new Carte(Couleur.COEUR, Valeur.DEUX));
@@ -114,7 +121,7 @@ public class MainTest {
 	}
 
 	@Test
-	public void testCarte() {
+	public void testCarte() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.TREFLE, Valeur.DEUX));
 		main.add(new Carte(Couleur.COEUR, Valeur.AS));
@@ -125,7 +132,7 @@ public class MainTest {
 	}
 
 	@Test(expected = MainPleineException.class)
-	public void testMainPleine() {
+	public void testMainPleine() throws Exception {
 		Main main = new Main();
 		main.add(new Carte(Couleur.COEUR, Valeur.DAME));
 		main.add(new Carte(Couleur.TREFLE, Valeur.DIX));
