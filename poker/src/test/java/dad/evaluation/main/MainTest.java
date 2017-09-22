@@ -29,6 +29,8 @@ import dad.evaluation.Valeur;
  * - paire : deux cartes de la même valeur.
  * - carte : aucune autre combinaison.
  * 
+ * Temps nécessaire : 1h30.
+ * 
  */
 public class MainTest {
 
